@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+
+@theme{
+ --color-green-800: oklch(53.2% 0.157 131.589);   
+}
+
+:root {
+  --bg: oklch(87.2% 0.01 258.338);
+}
+
+body {
+  background: var(--bg);
+}
+
+body.light {
+  background: oklch(87.2% 0.01 258.338); /* light gray */
+}
+
+body.dark {
+  background: #0a0a0a; /* near black */
+}
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
